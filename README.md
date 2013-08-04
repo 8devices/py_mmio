@@ -26,7 +26,7 @@ python blink_gpio18.py
 
 Speed/Jitter comparison
 =======================
-* C main() <b>freq = 7.6 MHz</b> 
+* C main() <b>freq = 7.6 MHz</b> NOTE: my logic analyzer is not fast enough to capture waveform
 ![1](/tests/images/mmio_fast.png)
 
 * C main(), usleep(10) <b>freq = 7.13 KHz</b>
