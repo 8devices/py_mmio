@@ -70,3 +70,13 @@ io -4  0x1804000C 0x00042605 <- set
 io -4  0x18040010 0x00042605 <- clr
 </pre>
 
+Control GPIO using simple python functions
+==========================================
+<pre>
+import gpio
+
+register = gpio.read(18)
+print "Read: 0x%08X" % register
+
+gpio.write(18, 0)
+</pre>
