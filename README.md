@@ -10,6 +10,13 @@ Make binaries
 CROSS_COMPILE = ~/carambola2/staging_dir/toolchain-mips_r2_gcc-4.7-linaro_uClibc-0.9.33.2/bin/mips-openwrt-linux-
 </pre>
 
+Also some packages should be selected from
+<pre>make menuconfig</pre>
+  * Languages
+    * Pyton
+      * python
+      * python-mini
+
 
 Build python package
 <pre>make python</pre>
