@@ -4,6 +4,13 @@ Python mmio package for Carambola2. With this module you can access all internal
 
 Make binaries
 =============
+* You need to have carambola2 build environment installed and precompilled prior to building this package
+* You might need to edit Makefile first line to meet your environment
+<pre>
+CROSS_COMPILE = ~/carambola2/staging_dir/toolchain-mips_r2_gcc-4.7-linaro_uClibc-0.9.33.2/bin/mips-openwrt-linux-
+</pre>
+
+
 Build python package
 <pre>make python</pre>
 
