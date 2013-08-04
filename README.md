@@ -24,11 +24,20 @@ wget https://github.com/Lukse/py_mmio/raw/master/tests/blink_gpio18.py
 python blink_gpio18.py
 </pre>
 
-Speed comparison
-================
-* Written in C main() <b>freq = 7.6 MHz</b>
+Speed/Jitter comparison
+=======================
+* C main() <b>freq = 7.6 MHz</b> 
+![1](/tests/images/mmio_fast.png)
+
+* C main(), usleep(10) <b>freq = 7.13 KHz</b>
+![2](/tests/images/c_usleep\(10\).png)
+
 * Python slow example <b>freq = 4 Khz</b>
+![3](/tests/images/python_slow.png)
+
 * Python fast example <b>freq = 26 kHz</b>
+![4](/tests/images/python_fast.png)
+
  
 Manual toggle GPIO18
 ====================
