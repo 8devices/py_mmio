@@ -1,6 +1,6 @@
 py_mmio
 =======
-Python mmio package for Carambola2
+Python mmio package for Carambola2. With this module you can access all internal registers. You can do some magic with this tool, but it's very easy to do something very wrong if you don't know what are you doing. Be warned!
 
 Make binaries
 =============
@@ -26,7 +26,6 @@ python blink_gpio18.py
 
 Speed comparison
 ================
-Test scenario:
 * Written in C main() <b>freq = 7.6 MHz</b>
 * Python slow example <b>freq = 4 Khz</b>
 * Python fast example <b>freq = 26 kHz</b>
