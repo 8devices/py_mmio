@@ -55,19 +55,18 @@ Speed/Jitter comparison
  
 Manual toggle GPIO18
 ====================
-Read current values
-
+Read current values:
 <pre>
-io -4 -r 0x18040000 -> 18040000:  00006cff
-io -4 -r 0x1804000C -> 1804000c:  00002605
-io -4 -r 0x18040010 -> 18040010:  00002605
+io -4 -r 0x18040000 -- 18040000:  00006cff
+io -4 -r 0x1804000C -- 1804000c:  00002605
+io -4 -r 0x18040010 -- 18040010:  00002605
 </pre>
 
-Toggle led
+Toggle led:
 <pre>
-io -4  0x18040000 0x00046cff <- setup out
-io -4  0x1804000C 0x00042605 <- set
-io -4  0x18040010 0x00042605 <- clr
+io -4  0x18040000 0x00046cff -- setup out
+io -4  0x1804000C 0x00042605 -- set
+io -4  0x18040010 0x00042605 -- clr
 </pre>
 
 Control GPIO using simple python functions
@@ -78,5 +77,5 @@ import gpio
 register = gpio.read(18)
 print "Read: 0x%08X" % register
 
-gpio.write(18, 0)
+gpio.write(18, 1)
 </pre>
