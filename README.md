@@ -32,9 +32,9 @@ Note: you need wget with SSL support
 cd /tmp/py_mmio
 rm mmio.py
 rm _mmio.so
-wget https://github.com/Lukse/py_mmio/raw/master/src/mmio.py
-wget https://github.com/Lukse/py_mmio/raw/master/src/_mmio.so
-wget https://github.com/Lukse/py_mmio/raw/master/tests/blink_gpio18.py
+wget https://github.com/8devices/py_mmio/raw/master/src/mmio.py
+wget https://github.com/8devices/py_mmio/raw/master/src/_mmio.so
+wget https://github.com/8devices/py_mmio/raw/master/tests/blink_gpio18.py
 python blink_gpio18.py
 </pre>
 
